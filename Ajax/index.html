@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟教程(runoob.com)</title>
+		<script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function() {
+				$.ajax({
+					type: "get",
+					url: 'http://127.0.0.1/Ajax/getsite_mysql.php',
+					data:{
+						q:2
+					},
+					success: function(res) {
+						$('#txtHint').html(res)
+					},
+					error:function(err){
+						console.log(err)
+					}
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<form>
+			<select name="users" onchange="showSite(this.value)">
+				<option value="">选择一个网站:</option>
+				<option value="1">Google</option>
+				<option value="2">淘宝</option>
+				<option value="3">菜鸟教程</option>
+				<option value="4">微博</option>
+				<option value="5">Facebook</option>
+			</select>
+		</form>
+		<br>
+		<div id="txtHint"><b>网站信息显示在这里……</b></div>
+
+	</body>
+
+</html>

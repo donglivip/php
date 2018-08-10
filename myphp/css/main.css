@@ -1,0 +1,9 @@
+/*通用*/
+*{margin: 0;padding: 0;}
+.wrapper,html,body{width: 100%;height: 100%;}
+.inner{width: 1200px;margin: 0 auto;}
+/*头部*/
+.header01{background: gainsboro;width: 100%;}
+.header01 .inner{display: flex;align-items: center;justify-content: space-between;border-bottom: 1px solid gray;font-size: 12px;height: 30px;padding: 0 10px;box-sizing: border-box;}
+.header01 .login{color: darkorange;margin-right: 8px;}
+.header01 .login-bar{display: flex;}

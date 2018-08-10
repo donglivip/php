@@ -1,0 +1,189 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="Bookmark" href="favicon.ico" >
+		<link rel="Shortcut Icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css" />
+		<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.admin.css" />
+		<link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="static/h-ui.admin/skin/default/skin.css" id="skin" />
+		<link rel="stylesheet" type="text/css" href="private/css/index.css" />
+		<title>H-ui.admin v3.1</title>
+	</head>
+	<body>
+		<header class="navbar-wrapper">
+			<div class="navbar navbar-fixed-top">
+				<div class="container-fluid cl"> 
+					<div class="logo navbar-logo f-l mr-10 hidden-xs" >H-ui.admin</div> 
+					<div class="logo navbar-slogan f-l mr-10 hidden-xs">v3.1</div> 
+					<nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
+						<ul class="cl">
+							<li>超级管理员</li>
+							<li class="dropDown dropDown_hover">
+								<a href="#" class="dropDown_A">admin <i class="Hui-iconfont">&#xe6d5;</i></a>
+								<ul class="dropDown-menu menu radius box-shadow">
+									<li><a href="javascript:;" onClick="password_back('个人信息','manager-user-info.html','1200','550')">个人信息</a></li>
+									<li><a href="login.html">切换账户</a></li>
+									<li><a href="login.html">退出</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<aside class="Hui-aside">
+			<div class="menu_dropdown bk_2">
+				<dl id="menu-audit">
+					<dt><i class="Hui-iconfont">&#xe638;</i> 推广管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+					<dd>
+						<ul>
+							<li><a data-href="promote-admin.html" data-title="地区管理" href="javascript:void(0)">地区管理</a></li>
+							<li><a data-href="promote-allot.html" data-title="地区分配" href="javascript:void(0)">地区分配</a></li>
+							<li><a data-href="promote-info.html" data-title="推广信息" href="javascript:void(0)">推广信息</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl id="menu-audit">
+					<dt><i class="Hui-iconfont">&#xe638;</i> 审核中心<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+					<dd>
+						<ul>
+							<li><a data-href="merchants-audit.html" data-title="商户审核" href="javascript:void(0)">商户审核</a></li>
+							<li><a data-href="merchants-agent.html" data-title="代理商审核" href="javascript:void(0)">代理商审核</a></li>
+							<li><a data-href="merchants-horseman.html" data-title="骑手审核" href="javascript:void(0)">骑手审核</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl id="menu-customer">
+					<dt><i class="Hui-iconfont">&#xe62b;</i> 客户管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+					<dd>
+						<ul>
+							<li><a data-href="customer-user.html" data-title="用户管理" href="javascript:void(0)">用户管理</a></li>
+							<li><a data-href="customer-horseman.html" data-title="骑手管理" href="javascript:void(0)">骑手管理</a></li>
+							<li><a data-href="customer-merchants.html" data-title="商户管理" href="javascript:void(0)">商户管理</a></li>
+							<li><a data-href="customer-agent.html" data-title="代理商管理" href="javascript:void(0)">代理商管理</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl id="menu-bidding">
+					<dt><i class="Hui-iconfont">&#xe6cf;</i> 竞价排名管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+					<dd>
+						<ul>
+							<li><a data-href="bidding.html" data-title="竞价排名管理" href="javascript:void(0)">竞价排名管理</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl id="menu-financial">
+					<dt><i class="Hui-iconfont">&#xe63a;</i> 财务管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+					<dd>
+						<ul>
+							<li><a data-href="financial-withdrawal.html" data-title="提现管理" href="javascript:;">提现管理</a></li>
+							<li><a data-href="financial-income.html" data-title="盈收管理" href="javascript:void(0)">盈收管理</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl id="menu-data">
+					<dt><i class="Hui-iconfont">&#xe61e;</i> 数据查看<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+					<dd>
+						<ul>
+							<li><a data-href="member-list.html" data-title="交易数据" href="javascript:;">交易数据</a></li>
+							<li><a data-href="member-del.html" data-title="提现数据" href="javascript:;">提现数据</a></li>
+							<li><a data-href="member-level.html" data-title="订单数据" href="javascript:;">订单数据</a></li>
+							<li><a data-href="member-scoreoperation.html" data-title="用户注册量" href="javascript:;">用户注册量</a></li>
+							<li><a data-href="member-record-browse.html" data-title="推广信息" href="javascript:void(0)">推广信息</a></li>
+							<li><a data-href="member-record-download.html" data-title="竞价排名量" href="javascript:void(0)">竞价排名量</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl id="menu-clerk">
+					<dt><i class="Hui-iconfont">&#xe62d;</i> 职员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+					<dd>
+						<ul>
+							<li><a data-href="admin-role.html" data-title="推广员管理" href="javascript:void(0)">推广员管理</a></li>
+							<li><a data-href="admin-permission.html" data-title="员工管理" href="javascript:void(0)">员工管理</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl id="menu-permissions">
+					<dt><i class="Hui-iconfont">&#xe61a;</i> 权限管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+					<dd>
+						<ul>
+							<li><a data-href="charts-1.html" data-title="职务管理" href="javascript:void(0)">职务管理</a></li>
+							<li><a data-href="charts-2.html" data-title="权限分配" href="javascript:void(0)">权限分配</a></li>
+							<li><a data-href="charts-3.html" data-title="页面管理" href="javascript:void(0)">页面管理</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl id="menu-activity">
+					<dt><i class="Hui-iconfont">&#xe6bb;</i> 活动管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+					<dd>
+						<ul>
+							<li><a data-href="activity.html" data-title="红包管理" href="javascript:void(0)">红包管理</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl id="menu-rules">
+					<dt><i class="Hui-iconfont">&#xe63c;</i> 规则管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+					<dd>
+						<ul>
+							<li><a data-href="system-rules.html" data-title="编码规则" href="javascript:void(0)">编码规则</a></li>
+							<li><a data-href="system-category.html" data-title="商户类型" href="javascript:void(0)">商户类型</a></li>
+							<li><a data-href="system-data.html" data-title="广告分成规则" href="javascript:void(0)">广告分成规则</a></li>
+							<li><a data-href="system-shielding.html" data-title="置顶规则" href="javascript:void(0)">置顶规则</a></li>
+							<li><a data-href="system-log.html" data-title="店铺互推规则" href="javascript:void(0)">店铺互推规则</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl id="menu-system">
+					<dt><i class="Hui-iconfont">&#xe62e;</i> 系统管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+					<dd>
+						<ul>
+							<li><a data-href="system-base.html" data-title="系统设置" href="javascript:void(0)">系统记录</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</aside>
+		<div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+		<section class="Hui-article-box">
+			<div id="Hui-tabNav" class="Hui-tabNav hidden-xs">
+				<div class="Hui-tabNav-wp">
+					<ul id="min_title_list" class="acrossTab cl">
+						<li class="active">
+							<span title="我的桌面" data-href="welcome.html">我的桌面</span>
+							<em></em>
+						</li>
+					</ul>
+				</div>
+				<div class="Hui-tabNav-morea btn-groupa">
+					<a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:;">
+						<i class="Hui-iconfont">&#xe6d4;</i>
+					</a>
+					<a id="js-tabNav-next" class="btn radius btn-default size-S" href="javascript:;">
+						<i class="Hui-iconfont">&#xe6d7;</i>
+					</a>
+				</div>
+			</div>
+			<div id="iframe_box" class="Hui-article">
+				<div class="show_iframe">
+					<div style="display:none" class="loading"></div>
+					<iframe scrolling="yes" frameborder="0" src="welcome.html"></iframe>
+				</div>
+			</div>
+		</section>
+		<!-- 公共模版 -->
+		<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script> 
+		<script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
+		<script type="text/javascript" src="static/h-ui/js/H-ui.min.js"></script>
+		<script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.js"></script> 
+		<!-- 公共模版 -->
+		
+		<!-- 此页面业务 -->
+		<script type="text/javascript" src="private/js/index.js"></script>
+	</body>
+</html>

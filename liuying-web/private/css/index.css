@@ -1,0 +1,25 @@
+.page-container {
+	width:500px;
+	margin:0 auto;
+	margin-top:15%;
+}
+
+.info-border:nth-of-type(1){
+	float:left;
+	width:55%;
+}
+
+.info-border:nth-of-type(2){
+	float:right;
+	width:45%;
+}
+
+.titleLable {
+	background-color:#f5fafe!important;
+}
+
+.select {
+	width:32%;
+	height:31px;
+	margin-bottom:5px;
+}
