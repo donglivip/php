@@ -1,6 +1,0 @@
-/*交易数据*/
-#city,#city02{width: 100%;display: flex;align-items: center;justify-content: center;height: 80px;}
-#city select,#city02 select{width: 200px;height: 40px;margin: 0 20px;}
-#city button{height: 40px;}
-.text-c input,.text-c button{height: 40px;box-sizing: border-box;}
-.text-c select{height: 32px;margin: 0;}
